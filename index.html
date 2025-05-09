@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Women's Sunday</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background: #fff9f5;
+      color: #3c2f2f;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .floral-decor img {
+      position: absolute;
+      z-index: -1;
+      width: 150px;
+      opacity: 0.85;
+    }
+
+    .flower-top-left {
+      top: 0;
+      left: 0;
+    }
+
+    .flower-top-right {
+      top: 0;
+      right: 0;
+    }
+
+    header {
+      background: #fde6e3;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    header h1 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 2.5rem;
+      color: #5a3e36;
+    }
+
+    .announcement-section {
+      background: url('https://www.transparenttextures.com/patterns/cream-dust.png');
+      padding: 3rem 1rem;
+      text-align: center;
+      background-color: #fff6f5;
+      border-bottom: 2px solid #f3d3ce;
+      position: relative;
+    }
+
+    .announcement-content {
+      max-width: 700px;
+      margin: auto;
+      color: #3c2f2f;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .announcement-content .logo {
+      max-height: 80px;
+      margin-bottom: 1rem;
+    }
+
+    .announcement-content h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .announcement-content h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.2rem;
+      margin: 0.5rem 0 1rem;
+      color: #2c1b1b;
+    }
+
+    .theme-label {
+      margin: 1rem 0 0.2rem;
+      font-weight: 500;
+    }
+
+    .theme-title {
+      font-weight: 700;
+      color: #b55b4c;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .bible-verse {
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      color: #4b3838;
+    }
+
+    .event-detail, .event-time, .event-location {
+      font-size: 1.05rem;
+      margin: 0.5rem 0;
+    }
+
+    .event-time strong {
+      color: #d16363;
+      font-size: 1.2rem;
+    }
+
+    .program-section, .message-section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .program-section h2, .message-section h2 {
+      text-align: center;
+      color: #b55b4c;
+      margin-bottom: 1rem;
+      font-family: 'Raleway', sans-serif;
+    }
+    .program-section h2{
+        font: 'Raleway';
+    }
+    .program-item {
+      background: #fff0eb;
+      padding: 1rem;
+      border-radius: 10px;
+      margin: 0.5rem 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .program-title {
+      color: #a74444;
+      font-weight: 400;
+      flex: 1;
+      font: 'Raleway';
+    }
+
+    .program-time {
+      font-style: italic;
+      color: #5a3e36;
+      min-width: 120px;
+      text-align: right;
+    }
+
+    .message-section p {
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .verse {
+      font-style: italic;
+      text-align: center;
+      margin: 1rem 0;
+      color: #714f4f;
+    }
+
+    footer {
+      background: #fde6e3;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #5e4c4c;
+    }
+
+    .deep-breath {
+      font-weight: bold;
+      color: #d16363;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .announcement-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .theme-title {
+        font-size: 1rem;
+      }
+
+      .event-detail, .event-time, .event-location {
+        font-size: 0.95rem;
+      }
+
+      .program-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .program-title, .program-time {
+        text-align: left;
+        min-width: auto;
+        margin: 0.5rem 0;
+      }
+
+      .message-section {
+        padding: 1rem;
+      }
+
+      .verse {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .announcement-content h1 {
+        font-size: 2rem;
+      }
+
+      .theme-title {
+        font-size: 0.9rem;
+      }
+
+      .program-section, .message-section {
+        padding: 0.5rem 1rem;
+      }
+
+      .program-item {
+        padding: 0.5rem;
+      }
+
+      .verse {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Floral Decor -->
+  <div class="floral-decor">
+    <img src="https://i.imgur.com/LHhXc0Y.png" class="flower-top-left" alt="">
+    <img src="https://i.imgur.com/SqAjUZP.png" class="flower-top-right" alt="">
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <img src="images/Screenshot 2025-05-09 at 20.38.14.png" alt="Women's Ministry Logo" class="header-logo" />
+  </header>
+
+  <!-- Announcement Section -->
+  <section class="announcement-section">
+    <div class="announcement-content">
+      <h2>PIWC WARSAW</h2>
+      <h1>Women's Hangout</h1>
+      <p class="theme-label">Theme:</p>
+      <p class="theme-title">IDENTITY IN COMPLETENESS</p>
+      <p class="bible-verse">
+        <em>And in Christ you have been brought to fullness.<br/>
+        He is the head over every power and authority</em><br/>
+        <strong>Colossians 2:10</strong>
+      </p>
+      <p class="event-detail"><span>📅</span> Saturday, 10 May 2025</p>
+      <p class="event-time"><span>🕛</span> <strong>12:00 PM</strong></p>
+      <p class="event-location"><span>📍</span> Bokserka 54, Warsaw, 02-690</p>
+    </div>
+  </section>
+
+  <!-- Programme Section -->
+  <section class="program-section">
+    <h2>Programme</h2>
+    <div class="program-item"><div class="program-title">Opening Prayer - Sister Vanessa</div><div class="program-time">10:30 – 10:40</div></div>
+    <div class="program-item"><div class="program-title">Bible Study - Sisters: Tanya, Tanya M, and Tadiwa</div><div class="program-time">10:40 – 11:05</div></div>
+    <div class="program-item"><div class="program-title">Greetings - MC Deaconess Dephine</div><div class="program-time">11:05 – 11:10</div></div>
+    <div class="program-item"><div class="program-title">Worship & Praises - Sister Ruby and Deaconess Andile</div><div class="program-time">11:10 – 11:40</div></div>
+    <div class="program-item"><div class="program-title">Testimonies</div><div class="program-time">11:40 – 11:45</div></div>
+    <div class="program-item"><div class="program-title">Ladies Ministration</div><div class="program-time">11:45 – 11:50</div></div>
+    <div class="program-item"><div class="program-title">Word and Prayer</div><div class="program-time">11:50 – 12:50</div></div>
+    <div class="program-item"><div class="program-title">Offering</div><div class="program-time">12:50 – 13:00</div></div>
+    <div class="program-item"><div class="program-title">First Timers & Announcements - Sister Chelsea</div><div class="program-time">13:00 – 13:10</div></div>
+    <div class="program-item"><div class="program-title">Vote of Thanks - Deaconess Chido</div><div class="program-time">13:10 – 13:15</div></div>
+    <div class="program-item"><div class="program-title">Closing Prayer & Benediction</div><div class="program-time">13:15 – 13:20</div></div>
+  </section>
+
+  <!-- Message Section -->
+  <section class="message-section">
+    <h2>A Complete Woman</h2>
+    <p>Have you ever battled with the idea of being ‘complete’? I know I have 😅. There’s a constant tug of war between the desire to become, to grow, improve and strive and the quiet whisper of God’s truth “You are already enough.”</p>
+    <p>It’s a tension many of us carry. We want to be better wives, mothers, friends, and followers of Christ yet we wrestle with the fear that we’re not quite “there” yet. As if "there" is some distant finish line we must cross to finally be whole.</p>
+    <div class="verse">"You are complete in Him." (Colossians 2:10)</div>
+    <p>Not "you will be," not "once you get it together," but “you are” right now, exactly as you are—complete in Christ. The work is finished. The love is unconditional.</p>
+    <p>A complete woman is not one who has it all together, but one who knows she is held together by God’s grace.</p>
+    <p>Now my dear ladies, this is not a call to mediocrity or to fold your hands and not do the needful. God is still shaping us, refining us, and calling us higher—but never from a place of lack. We grow <em>from</em> wholeness, not <em>toward</em> it. Our identity isn’t found in what we do or who we’re becoming. It’s anchored in who He says we are: loved, chosen, and complete.</p>
+    <p>So today, if you’re caught in the cycle of striving, pause. Take a deep breath and rest in this truth:</p>
+    <p class="deep-breath">You're not what you do. Deep breath.</p>
+    <p class="deep-breath">You're not what you have. Deep breath.</p>
+    <p class="deep-breath">You're not what people say about you. Deep breath.</p>
+    <p>You are the beloved of God. You are a complete woman. You are His. And in Him, you lack nothing.</p>
+    <div class="verse">#WWM #womensweek</div>
+  </section>
+
+  <footer>
+    &copy; 2025 Women's Ministry - The Church of Pentecost
+  </footer>
+</body>
+</html>
