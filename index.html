@@ -10,7 +10,7 @@
     body {
       margin: 0;
       font-family: 'Lato', sans-serif;
-      background: #fff9f5;
+      background: #fff6f5;
       color: #3c2f2f;
       position: relative;
       overflow-x: hidden;
@@ -240,6 +240,44 @@
         font-size: 0.8rem;
       }
     }
+    .header-text {
+  text-align: center;
+  margin-top: 1rem;
+  color: #3c2f2f;
+}
+
+/* Styling for "Women's Week" */
+.header-title {
+  font-family: 'Great Vibes', cursive; /* Great Vibes font */
+  font-size: 3.2rem; /* Matches "Women's Hangout" */
+  color: #2c1b1b; /* Same color as "Women's Hangout" */
+  margin: 0.5rem 0 1rem;
+}
+
+/* Styling for "Church of Pentecost" and "PIWC Warsaw" */
+.church-name, .piwc-name {
+  font-family: 'Raleway', sans-serif; /* Raleway font */
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0.2rem 0;
+}
+
+/* Styling for "Theme:" label */
+.theme-label {
+  margin: 1rem 0 0.2rem;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif; /* Matches the rest of the header text */
+}
+
+/* Styling for the theme title */
+.theme-title {
+  font-weight: 700;
+  color: #b55b4c;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-family: 'Raleway', sans-serif; /* Use Raleway font */
+  text-transform: uppercase; /* Converts text to uppercase */
+}
   </style>
 </head>
 <body>
@@ -252,6 +290,13 @@
   <!-- Header Section -->
   <header>
     <img src="images/Screenshot 2025-05-09 at 20.38.14.png" alt="Women's Ministry Logo" class="header-logo" />
+    <div class="header-text">
+        <h1 class="header-title">Women's Week</h1> <!-- Great Vibes font -->
+        <h2 class="church-name">Church of Pentecost</h2> <!-- Raleway font -->
+        <h2 class="piwc-name">PIWC Warsaw</h2> <!-- Raleway font -->
+        <p class="theme-label">Theme:</p>
+        <p class="theme-title">FULFILLING YOUR CALLING AS A COMPLETE WOMAN</p> <!-- Uppercase theme -->
+      </div>
   </header>
   <section class="message-section">
     <h2>Women's Wednesday Motivation</h2>
